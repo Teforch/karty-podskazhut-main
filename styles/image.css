@@ -1,0 +1,15 @@
+.content__figure {
+  position: relative;
+  width: calc(100% + 10vi);
+  margin: 7% auto;
+  right: 5vi;
+}
+.content__picture {
+  width: 100%;
+}
+.content__picture-caption {
+  text-align: center;
+  padding: 20px;
+  font-size: 18px;
+  border-bottom: 1px solid currentColor;
+}

@@ -1,0 +1,36 @@
+.content__card {
+  aspect-ratio: 4 / 3;
+  margin-top: 7%;
+  border: 1px solid currentColor;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.content__card-title {
+  font-size: 60px;
+}
+
+.colored-text {
+  position: relative;
+}
+
+.colored-text::after {
+  content: "";
+  position: absolute;
+  bottom: 9px;
+  right: -5px;
+  width: 220px;
+  height: 15px;
+  background-color: var(--accent-color, #ffab6b);
+  z-index: -1;
+}
+
+.content__card-subtitle {
+  font-size: 18px;
+}
+
+.theme_dark .colored-text::after {
+  background: url("../images/pattern.svg");
+}

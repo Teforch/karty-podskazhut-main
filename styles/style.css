@@ -1,0 +1,101 @@
+@import url(./header.css);
+@import url(./list.css);
+@import url(./image.css);
+@import url(./card.css);
+@import url(./footer.css);
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+.page {
+  min-inline-size: 360px;
+  margin: 0;
+}
+
+p,
+h1,
+h2,
+h3,
+blockquote,
+ul,
+ol,
+li,
+figure {
+  margin: 0;
+}
+
+:root {
+  /* light theme */
+  --bg-color: #f3efec;
+  --text-color: #312a4e;
+  --accent-color: #ffab6b;
+  --main-font: "Raleway", sans-serif;
+  --secondary-font: "STIX Two Text", serif;
+}
+
+.theme_dark {
+  --bg-color: #171717;
+  --text-color: #b3b3b3;
+  --accent-color: transparent;
+}
+
+.content-section {
+  padding-inline: 5vi;
+}
+
+.page {
+  background-color: var(--bg-color, #f3efec);
+  font-family: var(--main-font, "Raleway", sans-serif);
+  color: var(--text-color, #312a4e);
+}
+
+.heading {
+  color: var(--text-color, #312a4e);
+  text-align: center;
+  font-family: var(--accent-font, "STIX Two Text", serif);
+  font-weight: 600;
+  line-height: 0.9;
+}
+
+.content__title {
+  font-size: 30px;
+  padding: 7% 0 2.5% 0;
+}
+
+.content__text-block {
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.content__text-block .content__paragraph:not(:last-of-type) {
+  padding-bottom: 1.5em;
+}
+.content__link {
+  color: currentColor;
+}
+
+.content__blockquote {
+  width: 75%;
+  margin: auto;
+  padding-bottom: 1.5em;
+  font-size: 18px;
+  font-style: italic;
+  font-weight: 400;
+  line-height: 2;
+}
+
+.content__text-block_type_first-lettered
+  .content__paragraph:first-of-type::first-letter {
+  background-color: var(--accent-color, #ffab6b);
+  padding: 0 4px;
+  margin-right: 1px;
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
